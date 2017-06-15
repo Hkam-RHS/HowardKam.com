@@ -4,72 +4,99 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <title>STEM at RHS. Coding by Howard Kam</title>
+    <title>STEM at RHS. Learn to Code from Mr. Howard Kam</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+
 </head>
 
 <body>
+    <!--Top Nav Bar START-->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Aloha</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="index.html">Main</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="mission.html">Mission</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--Top top nav END-->
 
-
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <br><br>
-                <h1 class="header center red-text text-darken-2">STEM at Roosevelt</h1>
-                <div class="row center">
-                    <h4 class="header col s12 grey darken-1">Howard Kam, Educator</h4>
-                </div>
-                <div class="row center">
-
-                </div>
-                <br><br>
-
-            </div>
-        </div>
-        <div class="parallax"><img src="images/project.jpg" alt="project"></div>
+    <div class="parallax"><img src="images/project.jpg" alt="project"></div>
     </div>
 
 
     <div class="container">
         <div class="section">
-
-            <!--   Icon Section   -->
+            <!--Content card-->
             <div class="row">
                 <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">STEM 1 / IET Core</h5>
-
-                        <p class="light">A Career and Technical Education core class. The focus is on Science Technology Engineering and Math. In addition, this class also focuses on the standards of the Industrial Engineering and Technology. Students will learn web based computer languages such as HTML and CSS. Students will also learn how to program the Arduino microcontrollers, basic electronics, and three dimensional printing. These are the foundational skills so students will be prepared for advanced careers.</p>
+                    <div class="card blue darken-2">
+                        <div class="card-content white-text">
+                          <!--Displays corner banner START-->
+                            <div style="display: inline-block; position: absolute; top: -11px; right: -11px; z-index: 10;">
+                                <img src="./images/newPost.png">
+                            </div>
+                            <!--Displays corner banner END-->
+                            <span class="card-title">IET Core</span>
+                            <p class="light">Previously titled as STEM level 1, this is a Career and Technical Education core class. The focus is on Science Technology Engineering and Math. In addition, this class also focuses on the standards of the Industrial Engineering and Technology. Students will learn web
+                                based computer languages such as HTML and CSS. Students will also learn how to program the Arduino microcontrollers, basic electronics, and three dimensional printing. These are the foundational skills so students will
+                                be prepared for advanced careers.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="./pdf/IETCore.pdf"><i class="material-icons">assignment</i> IET Core Syllabus</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">STEM 2 / Information Technology</h5>
+                <!--End content card-->
 
-                        <p class="light">This class is the next evolution from the STEM 1 / IET Core. The focus is on web application languages and hybrid mobile app development. By the end of the course, students should be able to publish his or her own Android mobile application. </p>
-                        <p class="light"><i>Instructional approval required. Students must complete STEM 1 / IET Core class before taking the advanced course.</i></p>
+                <!--Content card-->
+                <div class="col s12 m4">
+                    <div class="card pink darken-4">
+                        <div class="card-content white-text">
+                          <!--Displays corner banner START-->
+                            <div style="display: inline-block; position: absolute; top: -11px; right: -11px; z-index: 10;">
+                                <img src="./images/newPost.png">
+                            </div>
+                            <!--Displays corner banner END-->
+                            <span class="card-title">Information Technology</span>
+                            <p class="light">Previously titled as STEM level 2. This class is the next evolution of the IET Core. The focus is on web application languages and hybrid mobile app development. By the end of the course, students should be able to publish his or her own Android mobile
+                                application. </p>
+                            <br>
+                            <p class="light"><i>Instructional approval required. Students must complete IET Core class before taking Information Technology.</i></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="./pdf/InfoTech.pdf"><i class="material-icons">assignment</i> Info Tech Syllabus</a>
+                        </div>
                     </div>
                 </div>
-
+                <!--End content card-->
+                <!--Content card-->
                 <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">STEM 3 & 4 Capstone</h5>
-
-                        <p class="light">This is the final level of the STEM program. During this evolution, students are encouraged to pursue projects that are self directed. Students will submit a project outline of what they will pursue in the field of STEM and utilizing
-                            what they have learned throughout their years in our class. </p>
-                        <p class="light"><i>Instructional approval required. Students must complete STEM 2 / Information Technology class before taking the advanced course.</i></p>
+                    <div class="card purple darken-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">STEM 3 & 4 Capstone</span>
+                            <p class="light">This is the final level of the STEM program. During this evolution, students are encouraged to pursue projects that are self directed. Students will submit a project outline of what they will pursue in the field of STEM and
+                                utilizing what they have learned throughout their years in our class. In addition, students will study the ethics of Cyber Security and understand the historical context of threats.</p>
+                            <br>
+                            <p class="light"><i>Instructional approval required. Students must complete the Information Technology class before taking the STEM 3 & 4 Capstone</i></p>
+                        </div>
+                        <div class="card-action">
+                            <a href="./pdf/STEM34.pdf"><i class="material-icons">assignment</i> STEM 3/4 Syllabus</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!--End content card-->
+
+            <!--   Icon Section   -->
+
 
         </div>
     </div>
@@ -79,8 +106,7 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
-    
-
+                    <p class="orange darken-4">The rise of Google, the rise of Facebook, the rise of Apple, I think are proof that there is a place for computer science as something that solves problems that people face every day. - Eric Schmidt. CEO of Alphabet</p>
                 </div>
             </div>
         </div>
@@ -88,61 +114,52 @@
     </div>
 
 
-    <footer class="page-footer red">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Teacher Bio</h5>
-                    <p class="grey-text text-lighten-4">Mr. Howard Kam is a graduate of the University of Hawaii at Manoa with a degree in Communicology. In addition to the quantitative study of human communication, he has over 15 years of experience in the field of web development.</p>
-
-
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Contact</h5>
-                    <ul>
-                        <li><a class="white-text">Roosevelt High School</a></li>
-                        <li><a class="white-text">1122 Nehoa Street</a></li>
-                        <li><a class="white-text">Honolulu, Hawaii 96822</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+ <footer class="page-footer">
         <div class="footer-copyright">
-            <div class="container">
                 Copyright 2017. Howard Kam
-            </div>
         </div>
-    </footer>
+</footer>
 
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
-<<<<<<< HEAD
-<!--Analytics-->>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+     <!--Analytics-->
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-9984913-1', 'auto');
-  ga('send', 'pageview');
-=======
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-9984913-1', 'auto');
+            ga('send', 'pageview'); ===
+            ===
+            = <script >
+                (function(i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function() {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-9984913-1', 'auto');
-      ga('send', 'pageview');
+            ga('create', 'UA-9984913-1', 'auto');
+            ga('send', 'pageview');
+        </script>
 
-    </script>
->>>>>>> origin/master
-
-</script>
+        </script>
 </body>
 
 </html>

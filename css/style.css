@@ -55,3 +55,102 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.titleBanner {
+  width: 400px;
+  background-color: #ffd600;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+  box-shadow: 4px 4px 18px 0px rgba(0, 0, 0, 0.75);
+}
+
+.focus-in-expand {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.scale-in-ver-top {
+  -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/**
+ * ----------------------------------------
+ * animation scale-in-ver-top
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+/*For corner banner*/
+.corner-ribbon {
+  width: 250px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  overflow: hidden;
+}
+.corner-ribbon.shadow {
+  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+/* Different positions */
+
+.corner-ribbon.top-right {
+  /* top: 18px; */
+    top:30px;
+  right: -70px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(46deg);
+  overflow: hidden;
+}
+.corner-ribbon.blue {
+  background: #39d;
+}
+
+.large-4, html{
+    height:100%;
+    width:100%;
+}
+
+.large-4{
+    overflow:hidden;
+}

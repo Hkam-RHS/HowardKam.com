@@ -17,25 +17,26 @@
 
 <body>
   <!--Top Nav Bar START-->
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper grey darken-3">
-
-        <span class="brand-logo right" style="color:white; margin-right:10px">Howard Kam | coding @ RHS</span>
-
-        <ul class="left hide-on-med-and-down">
-          <li class="blue-grey lighten-4"><a href="index.html">Courses</a></li>
-          <li class="active blue accent-2"><a href="projects.html">Projects</a></li>
-          <li class="blue-grey lighten-4"><a href="mission.html">Mission</a></li>
-        </ul>
+  <ul id="slide-out" class="side-nav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="images/Kam.png" style="width:100%">
+        </div>
       </div>
-    </nav>
-  </div>
+    </li>
+
+    <li><a href="index.html"><i class="material-icons">assignment</i>Course offerings</a></li>
+    <li><a href="projects.html"><i class="material-icons">grade</i>Projects</a></li>
+    <li><a href="mission.html"><i class="material-icons">new_releases</i>Mission</a></li>
+    <li><a href="resources.html"><i class="material-icons">supervisor_accounts</i>Student Resources</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
   <!--Top top nav END-->
 
   <!--START Main content-->
-  <div class="parallax-container">
-    <div class="parallax"><img src="images/greenYellow.png"></div>
+
+    <div class="parallax"><img src="images/vshape.jpg"></div>
 
     <div class="container">
       <div class="section">
@@ -87,12 +88,6 @@
   </div>
 
   <!--END Main content-->
-  </div>
-  <footer class="page-footer">
-    <div class="footer-copyright">
-      Copyright 2017. Howard Kam
-    </div>
-  </footer>
 
 
   <!--  Scripts-->

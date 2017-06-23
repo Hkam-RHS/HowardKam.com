@@ -17,20 +17,21 @@
 
 <body>
   <!--Top Nav Bar START-->
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper grey darken-3">
-
-        <span class="brand-logo right" style="color:white; margin-right:10px">Howard Kam | coding @ RHS</span>
-
-        <ul class="left hide-on-med-and-down">
-          <li class="active blue accent-2"><a href="index.html">Courses</a></li>
-          <li class="blue-grey lighten-4"><a href="projects.html">Projects</a></li>
-          <li class="blue-grey lighten-4"><a href="mission.html">Mission</a></li>
-        </ul>
+  <ul id="slide-out" class="side-nav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="images/Kam.png" style="width:100%">
+        </div>
       </div>
-    </nav>
-  </div>
+    </li>
+
+    <li><a href="index.html"><i class="material-icons">assignment</i>Course offerings</a></li>
+    <li><a href="projects.html"><i class="material-icons">grade</i>Projects</a></li>
+    <li><a href="mission.html"><i class="material-icons">new_releases</i>Mission</a></li>
+    <li><a href="resources.html"><i class="material-icons">supervisor_accounts</i>Student Resources</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
   <!--Top top nav END-->
   <div class="parallax"><img src="images/project.jpg" alt="project"></div>
   <div class="container">
@@ -98,36 +99,16 @@
       </div>
       <!--End content card-->
 
-      <!--   Icon Section   -->
-
 
     </div>
   </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <p class="orange darken-4">The rise of Google, the rise of Facebook, the rise of Apple, I think are proof that there is a place for computer science as something that solves problems that people face every day. - Eric Schmidt. CEO of Alphabet</p>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="images/arduino.jpg" alt="Arduino"></div>
-  </div>
-
-
-  <footer class="page-footer">
-    <div class="footer-copyright">
-      Copyright 2017. Howard Kam
-    </div>
-  </footer>
 
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
   <!--Analytics-->
   <script>
     (function(i, s, o, g, r, a, m) {

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kam DASH</title>
+    <style>
+
+body  {
+    margin: 0;
+    padding: 0;
+    background-image: url('abstract.jpg');
+    background-size: cover;
+}
+
+
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  color: white;
+  text-shadow: 3px 3px 3px #888888;
+
+}
+
+.dashcontent {
+    position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 40vw;
+  height: 100vh;
+  transform: translate(-50%, -45%);
+}
+
+#showTime {
+    position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -98%);
+  z-index: 3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  color: white;
+  text-shadow: 3px 3px 3px #888888;
+}
+    </style>
+</head>
+
+<body onload="javascript:pageloadEvery(30000);">
+    <script>
+     function pageloadEvery(30000) {
+setTimeout('location.reload(true)', 30000);
+}
+    </script>
+
+    <p id="showTime"></p>
+    
+        <div class="dashcontent">
+            <span id="showTime"></span>
+            <br>
+            
+            <iframe height=80% width=100% src="https://docs.google.com/document/d/e/2PACX-1vRFEsKAbgLcI3ghsJjetNwnk-4I1Sk_9CcGg0vMBySvGKiKq5U9uj_ybc3FDI78tkyKIS3SSYfUwSWr/pub?embedded=true"></iframe>
+      </div>
+    
+    
+    
+    
+     <script type="text/javascript ">
+       
+
+        function startTime() {
+            var d = new Date();
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('showTime').innerHTML = days[d.getDay()] + " " + h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            }; // add zero in front of numbers < 10
+            return i;
+        }
+        startTime();
+        </script>
+</body>
+
+</html>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kam DASH</title>
     <style>
@@ -11,66 +12,33 @@
 body  {
     margin: 0;
     padding: 0;
-    background-image: url('abstract.jpg');
-    background-size: cover;
+    background-color: black
 }
-
-
-
-.title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 50px;
-  color: white;
-  text-shadow: 3px 3px 3px #888888;
-
-}
-
-.dashcontent {
-    position: absolute;
-  top: 55%;
-  left: 50%;
-  width: 40vw;
-  height: 100vh;
-  transform: translate(-50%, -45%);
-}
-
 #showTime {
     position: absolute;
-  top: 2%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -98%);
+  transform: translate(-50%, -60%);
   z-index: 3;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 80px;
-  color: white;
-  text-shadow: 3px 3px 3px #888888;
+  color: rgb(160, 209, 255);
 }
+
     </style>
 </head>
 
 <body>
-    <script>
-     
-    </script>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/21d31n157d86/honolulu/?unit=us" data-label_1="HONOLULU" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="original" >HONOLULU WEATHER</a>
+
+
+
 
     <p id="showTime"></p>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     
-        <div class="dashcontent">
-            <span id="showTime"></span>
-            <br>
-            
-            <iframe height=80% width=100% src="https://docs.google.com/document/d/e/2PACX-1vRFEsKAbgLcI3ghsJjetNwnk-4I1Sk_9CcGg0vMBySvGKiKq5U9uj_ybc3FDI78tkyKIS3SSYfUwSWr/pub?embedded=true"></iframe>
-      </div>
-    
-    
-    
-    
-     <script type="text/javascript ">
-    setTimeout(function () { 
-      location.reload();
-    }, 60 * 1000);
-
-        function startTime() {
+    function startTime() {
             var d = new Date();
             var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
@@ -91,7 +59,12 @@ body  {
             return i;
         }
         startTime();
-        </script>
+    
+    
+    </script>
+
+
+
 </body>
 
 </html>
